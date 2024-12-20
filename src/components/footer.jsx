@@ -7,7 +7,7 @@ import {
   faFacebook,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import Logo from "../assets/LogoKKN.svg";
+import Logo from "../assets/log.svg";
 
 const footer = () => {
   return (

@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import React, { useState } from "react";
-import Logo from "../assets/LogoKKN.svg";
+import Logo from "../assets/log.png";
 import "./navbar.css";
 import { CSSTransition } from "react-transition-group";
 import { Divide as Hamburger } from "hamburger-react";

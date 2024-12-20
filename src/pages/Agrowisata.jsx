@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <>
       <HtmlHead
-        title="Agrowisata"
+        title="Kegiatan"
         decription="[insert page description]"
-        link="/agrowisata"
+        link="/Kegiatan"
       />
       <main className="overflow-hidden">
         <Agrowisata1 />

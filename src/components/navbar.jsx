@@ -77,7 +77,7 @@ const Navbar = () => {
         </NavLink> */}
         <NavLink
           exact
-          to="/agrowisata"
+          to="/kegiatan"
           className={({ isActive }) => (isActive ? "font-bold" : "font-normal")}
           style={{
             marginLeft: "1.5rem",
@@ -116,7 +116,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           exact
-          to="/budaya "
+          to="/profil-kelompok"
           className={({ isActive }) => (isActive ? "font-bold" : "font-normal")}
           style={{
             marginLeft: "1.5rem",
@@ -230,7 +230,7 @@ const Navbar = () => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 setNavbar(false);
               }}
-              to="/agrowisata"
+              to="/kegiatan"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-[#A0A083]"
             >
               Kegiatan
@@ -254,7 +254,7 @@ const Navbar = () => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 setNavbar(false);
               }}
-              to="/budaya"
+              to="/profil-kelompok"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-[#A0A083]"
             >
               Profil Kelompok

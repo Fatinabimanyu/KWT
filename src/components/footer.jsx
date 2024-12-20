@@ -77,7 +77,7 @@ const footer = () => {
                   onClick={() => {
                     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                   }}
-                  to="/agrowisata"
+                  to="/kegiatan"
                   className="w-fit transition-colors hover:text-yellow-500 mobile:text-xl"
                 >
                   Kegiatan
@@ -95,7 +95,7 @@ const footer = () => {
                   onClick={() => {
                     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                   }}
-                  to="/budaya"
+                  to="/profil-kelompok"
                   className="w-fit transition-colors hover:text-yellow-500 mobile:text-xl"
                 >
                   Profil Kelompok

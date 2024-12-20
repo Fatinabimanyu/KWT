@@ -8,9 +8,9 @@ export default function Budaya() {
   return (
     <>
       <HtmlHead
-        title="Budaya"
+        title="Profil Kelompok"
         decription="[insert page description]"
-        link="/budaya"
+        link="/profil-kelompok"
       />
       <main className="overflow-hidden bg-basic">
         <Budaya1 />

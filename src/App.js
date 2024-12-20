@@ -19,9 +19,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/agrowisata" element={<Agrowisata />} />
+        <Route path="/kegiatan" element={<Agrowisata />} />
         <Route path="/umkm" element={<Umkm />} />
-        <Route path="/budaya" element={<Budaya />} />
+        <Route path="/profil-kelompok" element={<Budaya />} />
         <Route path="/artikel" element={<Artikel />} />
         <Route path="/artikel/identifikasi" element={<Identifikasi />} />
         <Route

@@ -29,7 +29,7 @@ const Umkm1 = () => {
             <div className="mt-1 justify-center sm:gap-1.5 md:gap-1 xl:gap-1 mobile:gap-1.5">
               <div className="text-[#545B77] font-Satisfy text-2xl sm:text-3xl xl:text-4xl font-bold text-center mb-6">
                 Produk UMKM KWT Good Farm
-                <div className="text-[#545B77] sm:text-base text-justify mr-10 text mt-4">
+                <div className="text-[#545B77] text-sm text-justify ">
                 Produk UMKM KWT Good Farm dijual melalui UMKM Bina Indah Lestari, yaitu UMKM binaan CSR PT. Indah Kiat Pulp&Paper Tbk. Tangerang Mill. Produk yang dihasilkan merupakan hasil panen sayuran di lahan KWT Good Farm dan hasil pengolahan pertanian lahan  KWT Good Farm menjadi berbagai macam camilan ringan yang lezat dan bergizi. Selain itu, beberapa UMKM yang terdapat di Kota Tangerang Selatan juga difasilitasi penjualannya melalui UMKM Bina Indah Lestari ini. Berikut merupakan katalog produk UMKM Bina Indah Lestari yang bisa dipesan melalui website ini dengan harga 25.000 semua, kecuali keripik kentang 45.000!
                 </div>
               </div>

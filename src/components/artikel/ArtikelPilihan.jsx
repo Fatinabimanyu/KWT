@@ -7,8 +7,8 @@ import gambar4 from "../../assets/agrowisata/edu4.jpg";
 import gambar5 from "../../assets/agrowisata/edu5.JPG";
 import gambar6 from "../../assets/agrowisata/edu6.JPG";
 import gambar7 from "../../assets/agrowisata/edu7.JPG";
-import gambar8 from "../../assets/agrowisata/asman.JPG";
-import gambar9 from "../../assets/agrowisata/asman.JPG";
+import gambar8 from "../../assets/agrowisata/1.png";
+import gambar9 from "../../assets/agrowisata/2.png";
 
 
 import sunrise3 from "../../assets/agrowisata/sunrisee.jpg";
@@ -190,6 +190,36 @@ Untuk lebih jelasnya, kegiatan eduwisata urban farming KWT Good Farm terdiri dar
       
     </div>
   </div>
+</div>
+<div className="text-[#545B77] text-lg text-justify mt-6 leading-relaxed space-y-4">
+  <p>
+    <strong>Eduwisata Urban Farming</strong> merupakan kegiatan yang sangat bermanfaat bagi masyarakat perkotaan. 
+    Selain memberikan pengetahuan dan keterampilan, kegiatan ini juga dapat meningkatkan kesadaran akan pentingnya menjaga lingkungan dan menerapkan gaya hidup sehat.
+  </p>
+
+  <p>
+    Harapannya, anak-anak kecil di daerah urban masih tetap bisa mengenal dunia pertanian dan merasakan pengalaman memainkan permainan tradisional.
+  </p>
+
+  <p>
+    <strong>Eduwisata Urban Farming KWT Good Farm</strong> memiliki rincian paket yang ditawarkan sebagai berikut:
+  </p>
+</div>
+<div className="flex gap-4">
+  {[gambar8, gambar9].map((gambar, index) => (
+    <div
+      key={index}
+      className="transform hover:transition-all hover:scale-[105%]"
+    >
+      <a href={gambar} target="_blank" rel="noopener noreferrer" download>
+        <img
+          className="h-64 w-auto object-cover cursor-pointer"
+          src={gambar}
+          alt={`rectangle-${index}`}
+        />
+      </a>
+    </div>
+  ))}
 </div>
 
         </div>

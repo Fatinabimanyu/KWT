@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import gambar1 from "../../assets/agrowisata/budi.jpg";
-import gambar2 from "../../assets/agrowisata/hid.JPG";
-import gambar3 from "../../assets/agrowisata/konv.JPG";
-import gambar4 from "../../assets/agrowisata/pem.JPG";
-import gambar5 from "../../assets/agrowisata/peng.JPG";
-import gambar6 from "../../assets/agrowisata/perik.JPG";
-import gambar7 from "../../assets/agrowisata/asman.JPG";
+import gambar1 from "../../assets/agrowisata/edu1.JPEG";
+import gambar2 from "../../assets/agrowisata/edu2.JPEG";
+import gambar3 from "../../assets/agrowisata/edu3.JPG";
+import gambar4 from "../../assets/agrowisata/edu4.jpg";
+import gambar5 from "../../assets/agrowisata/edu5.JPG";
+import gambar6 from "../../assets/agrowisata/edu6.JPG";
+import gambar7 from "../../assets/agrowisata/edu7.JPG";
+import gambar8 from "../../assets/agrowisata/asman.JPG";
+import gambar9 from "../../assets/agrowisata/asman.JPG";
+
 
 import sunrise3 from "../../assets/agrowisata/sunrisee.jpg";
 import AOS from "aos";
@@ -73,161 +76,122 @@ const ArtikelPilihan = () => {
           </div>
           <div className="text-xl xl:text-2xl text-justify leading-relaxed my-6">
   Eduwisata urban farming KWT Good Farm terletak di Jl. Gardenia Loka, Paku Jaya, Kec. Serpong Utara, Kota Tangerang Selatan, Banten. Eduwisata urban farming KWT Good Farm adalah konsep wisata yang menggabungkan unsur edukasi dan pertanian di kawasan urban (perkotaan). Konsep ini bertujuan untuk memberikan pengalaman belajar yang menyenangkan dan interaktif tentang pertanian di lingkungan perkotaan. Tidak hanya memberikan pengetahuan tentang cara bercocok tanam, tetapi juga memperkenalkan pentingnya menjaga ketahanan pangan, memanfaatkan lahan terbatas, serta gaya hidup sehat dan berkelanjutan. Selain itu, pada eduwisata ini juga memperkenalkan permainan tradisional yang kemungkinan besar anak kecil zaman sekarang sudah jarang memainkannya, seperti permainan egrang, bakiak, engklek, congklak, hula hoop, panahan, dan beberapa permainan tradisional lainnya.
-</div><div className="text-2xl xl:text-3xl text-justify font-semibold leading-relaxed my-6">
+  <div className="flex flex-wrap justify-center gap-4 pb-4">
+  {[gambar1,gambar2,gambar3, gambar4, gambar5, gambar6, gambar7].map((gambar, index) => (
+    <div
+      key={index}
+      className="transform hover:transition-all hover:scale-[105%]"
+    >
+      <img
+        className="h-64 w-auto object-cover"
+        src={gambar}
+        alt={`rectangle-${index}`}
+      />
+    </div>
+  ))}
+</div>
+
 Untuk lebih jelasnya, kegiatan eduwisata urban farming KWT Good Farm terdiri dari:</div>
 
-          <div className="grid grid-cols-1 xl:grid-cols-2 mt-3 gap-6 pt-4 items-center">
-            <div className="text-xl text-justify">
-              <div className="font-bold text-xl xl:text-3xl text-left mb-2">
-              Kegiatan Belajar Pertanian
-              </div>
-              <p>
-                Pertanian hidroponik adalah metode budidaya tanaman yang tidak
-                menggunakan media tanam berupa tanah. Sebagai gantinya, tanaman
-                ditanam pada media inert seperti rockwool, cocopeat, atau
-                styrofoam yang dibasahi dengan larutan nutrisi. Larutan nutrisi
-                ini mengandung semua zat hara yang dibutuhkan tanaman untuk
-                tumbuh optimal.
-              </p>
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className="rounded-xl object-cover xl:h-[60vh] h-full"
-                src={gambar2}
-                alt="Budidaya pertanian hidroponik"
-              />
-            </div>
-          </div>
-          <div className="grid grid-cols-1 xl:grid-cols-2 mt-3 gap-6 pt-4 items-center">
-            <div className="text-xl text-justify">
-              <div className="font-bold text-xl xl:text-3xl text-left mb-2">
-                Budidaya pertanian Aquaponik
-              </div>
-              <p>
-                Pertanian Akuaponik adalah sebuah sistem budidaya inovatif yang
-                menggabungkan dua metode pertanian, yaitu akuakultur(budidaya
-                ikan) dan hidroponik (budidaya tanaman tanpa media tanah). Dalam
-                sistem ini, keduanya saling melengkapi dan menciptakan siklus
-                hidup yang berkelanjutan.
-              </p>
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className="rounded-xl object-cover xl:h-[60vh] h-full"
-                src={gambar1}
-                alt="Menanam sayuran"
-              />
-            </div>
-          </div>{" "}
-          <div className="grid grid-cols-1 xl:grid-cols-2 mt-3 gap-6 pt-4 items-center">
-            <div className="text-xl text-justify">
-              <div className="font-bold text-xl xl:text-3xl text-left mb-2">
-                Budidaya pertanian konvensional
-              </div>
-              <p>
-                Pertanian konvensional adalah sistem pertanian yang sudah lama
-                digunakan dan mengandalkan pada penggunaan input eksternal
-                seperti pupuk kimia, pestisida, dan herbisida untuk meningkatkan
-                produktivitas. Sistem ini juga seringkali menggunakan varietas
-                tanaman unggul hasil rekayasa genetika dan teknik budidaya
-                intensif.
-              </p>
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className="rounded-xl object-cover xl:h-[60vh] h-full"
-                src={gambar3}
-                alt="Budidaya pertanian konvensional"
-              />
-            </div>
-          </div>
-          <div className="grid grid-cols-1 xl:grid-cols-2 mt-3 gap-6 pt-4 items-center">
-            <div className="text-xl text-justify">
-              <div className="font-bold text-xl xl:text-3xl text-left mb-2">
-                Pemasaran hasil kebun dan UMKM
-              </div>
-              <p>
-                Pemasaran hasil kebun adalah serangkaian kegiatan yang dilakukan
-                untuk menjual produk-produk pertanian yang dihasilkan dari
-                kebun, mulai dari perencanaan, penentuan harga, promosi, hingga
-                distribusi produk tersebut ke tangan konsumen.
-              </p>
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className="rounded-xl object-cover xl:h-[60vh] h-full"
-                src={gambar4}
-                alt="Pemasaran hasil kebun dan UMKM"
-              />
-            </div>
-          </div>
-          <div className="grid grid-cols-1 xl:grid-cols-2 mt-3 gap-6 pt-4 items-center">
-            <div className="text-xl text-justify">
-              <div className="font-bold text-xl xl:text-3xl text-left mb-2">
-                Pengolahan makanan hasil kebun melalui UMKM
-              </div>
-              <p>
-                Pengolahan makanan hasil kebun adalah serangkaian proses yang
-                dilakukan untuk mengubah hasil panen dari kebun menjadi produk
-                makanan yang siap dikonsumsi atau diolah lebih lanjut. Proses
-                ini melibatkan berbagai teknik dan metode, mulai dari yang
-                sederhana hingga yang kompleks, dengan tujuan meningkatkan nilai
-                tambah, memperpanjang masa simpan, dan menciptakan produk yang
-                lebih beragam.
-              </p>
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className="rounded-xl object-cover xl:h-[60vh] h-full"
-                src={gambar5}
-                alt="PPengolahan makanan hasil kebun melalui UMKM"
-              />
-            </div>
-          </div>
-          <div className="grid grid-cols-1 xl:grid-cols-2 mt-3 gap-6 pt-4 items-center">
-            <div className="text-xl text-justify">
-              <div className="font-bold text-xl xl:text-3xl text-left mb-2">
-                Budidaya Perikanan
-              </div>
-              <p>
-                Budidaya Perikanan adalah suatu kegiatan yang dilakukan manusia
-                untuk membudidayakan atau membiakkan berbagai jenis biota air,
-                seperti ikan, udang, kerang, dan rumput laut, dalam lingkungan
-                yang terkendali. Tujuan utama dari budidaya perikanan adalah
-                untuk meningkatkan produksi sumber daya perikanan, memenuhi
-                kebutuhan pangan, serta mengembangkan sektor perikanan secara
-                berkelanjutan.
-              </p>
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className="rounded-xl object-cover xl:h-[60vh] h-full"
-                src={gambar6}
-                alt="Pemasaran hasil kebun dan UMKM"
-              />
-            </div>
-          </div>
-          <div className="grid grid-cols-1 xl:grid-cols-2 mt-3 gap-6 pt-4 items-center">
-            <div className="text-xl text-justify">
-              <div className="font-bold text-xl xl:text-3xl text-left mb-2">
-                Kegiatan Asman toga
-              </div>
-              <p>
-                Asman Toga adalah singkatan dari Asuhan Mandiri dengan
-                memanfaatkan Taman Obat Keluarga. Ini merupakan sebuah program
-                yang bertujuan untuk memberdayakan masyarakat agar dapat menjaga
-                kesehatan diri dan keluarganya secara mandiri dengan
-                memanfaatkan tanaman obat yang ditanam sendiri di rumah.
-              </p>
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className="rounded-xl object-cover xl:h-[60vh] h-full"
-                src={gambar7}
-                alt="Pemasaran hasil kebun dan UMKM"
-              />
-            </div>
-          </div>
+<div className="grid grid-cols-1 xl:grid-cols-2 mt-3 gap-6 pt-4 items-center">
+  <div className="text-xl text-justify">
+    <div className="font-bold text-xl xl:text-3xl text-left mb-2">
+      1. Kegiatan Belajar Pertanian
+    </div>
+    <div className="md:w-1/2 text-[#4A4A7C]">
+      <ul className="list-decimal list-inside space-y-3">
+        <li>
+          <span className="font-semibold">Pengenalan Tanaman:</span> Peserta akan diajak untuk mengenal berbagai jenis tanaman yang cocok ditanam di perkotaan, seperti sayuran, buah-buahan, dan tanaman hias. Mereka akan belajar tentang karakteristik masing-masing tanaman, cara menanam, merawat, dan memanennya.
+        </li>
+        <li>
+          <span className="font-semibold">Teknik Bercocok Tanam:</span> Peserta akan belajar berbagai teknik bercocok tanam yang efisien dan ramah lingkungan, seperti hidroponik, vertikultur, dan aquaponik. Mereka akan diajak untuk praktik langsung menanam dan merawat tanaman.
+        </li>
+        <li>
+          <span className="font-semibold">Pengelolaan Kebun:</span> Peserta akan belajar tentang cara mengelola kebun perkotaan yang baik, mulai dari persiapan lahan, pemupukan, pengendalian hama dan penyakit, hingga panen.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div className="text-xl text-justify">
+    <div className="font-bold text-xl xl:text-3xl text-left mb-2">
+      2. Budidaya Perikanan
+    </div>
+    <div className="md:w-1/2 text-[#4A4A7C]">
+      <ul className="list-decimal list-inside space-y-3">
+        <li>
+          <span className="font-semibold">Pengenalan Ikan:</span> Peserta akan diajak untuk mengenal berbagai jenis ikan yang cocok dibudidayakan di perkotaan, seperti ikan lele, nila, dan patin. Mereka akan belajar tentang karakteristik masing-masing ikan, cara memelihara, memberi makan, dan memanennya.
+        </li>
+        <li>
+          <span className="font-semibold">Teknik Budidaya Ikan:</span> Peserta akan belajar berbagai teknik budidaya ikan yang efisien dan ramah lingkungan, seperti sistem kolam terpal, kolam bioflok, dan aquaponik (menggabungkan perikanan dan pertanian).
+        </li>
+        <li>
+          <span className="font-semibold">Pengelolaan Kolam:</span> Peserta akan belajar tentang cara mengelola kolam ikan yang baik, mulai dari persiapan kolam, pemberian pakan, pengendalian kualitas air, hingga panen.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div className="grid grid-cols-1 xl:grid-cols-3 mt-3 gap-6 pt-4 items-center">
+  {/* Nomor 3 */}
+  <div className="text-xl text-justify">
+    <div className="font-bold text-xl xl:text-3xl text-left mb-2">
+      3. Budidaya Peternakan
+    </div>
+    <div className="md:w-1/2 text-[#4A4A7C]">
+      <ul className="list-decimal list-inside space-y-3">
+        <li>
+          <span className="font-semibold">Pengenalan Hewan Ternak:</span> Peserta akan diajak untuk mengenal berbagai jenis hewan ternak yang cocok dipelihara di perkotaan, seperti ayam, bebek, kambing, dan kelinci. Mereka akan belajar tentang karakteristik masing-masing hewan, cara memelihara, memberi makan, dan merawatnya.
+        </li>
+        <li>
+          <span className="font-semibold">Teknik Beternak:</span> Peserta akan belajar berbagai teknik beternak yang efisien dan ramah lingkungan, seperti sistem kandang modern, pemberian pakan yang tepat, dan pencegahan penyakit.
+        </li>
+        <li>
+          <span className="font-semibold">Pengelolaan Peternakan:</span> Peserta akan belajar tentang cara mengelola peternakan perkotaan yang baik, mulai dari persiapan kandang, pemberian pakan, perawatan kesehatan hewan, hingga panen.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  {/* Nomor 5 - ditaruh di tengah */}
+  <div className="text-xl text-justify xl:col-start-2">
+    <div className="font-bold text-xl xl:text-3xl text-left mb-2">
+       4. Permainan Tradisional
+    </div>
+    <div className="md:w-1/2 text-[#4A4A7C]">
+    <ul className="list-decimal list-inside space-y-3">
+        <li>
+          <span className="font-semibold">Permainan Anak-anak:</span> Peserta akan diajak untuk bermain berbagai permainan tradisional yang berhubungan dengan pertanian, seperti congklak, dakon, dan ular tangga tani. Permainan ini tidak hanya menyenangkan, tetapi juga mengajarkan nilai-nilai luhur dan kearifan lokal.
+        </li>
+        <li>
+          <span className="font-semibold">Permainan Kelompok:</span> Peserta akan diajak untuk bermain berbagai permainan kelompok yang membutuhkan kerjasama dan kekompakan, seperti bakiak. Permainan ini dapat meningkatkan rasa kebersamaan dan solidaritas antar peserta.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  {/* Nomor 4 */}
+  <div className="text-xl text-justify">
+    <div className="font-bold text-xl xl:text-3xl text-left mb-2">
+    5. Workshop Edukasi Cara Menanam
+    </div>
+    <div className="md:w-1/2 text-[#4A4A7C]">
+    <ul className="list-decimal list-inside space-y-3">
+        <li>
+          <span className="font-semibold">Menanam Sayuran:</span> Peserta akan diajak untuk mengikuti workshop tentang cara menanam sayuran yang baik dan benar, mulai dari persiapan media tanam, penyemaian benih, penanaman, perawatan, hingga panen.
+        </li>
+        <li>
+          <span className="font-semibold">Menanam Buah-buahan:</span> Peserta akan diajak untuk mengikuti workshop tentang cara menanam buah-buahan yang baik dan benar, mulai dari pemilihan bibit, penanaman, perawatan, hingga panen.
+        </li>
+        <li>
+          <span className="font-semibold">Menanam Tanaman Hias:</span> Peserta akan diajak untuk mengikuti workshop tentang cara menanam tanaman hias yang baik dan benar, mulai dari pemilihan jenis tanaman, penanaman, perawatan, hingga perbanyakan.
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
     </div>

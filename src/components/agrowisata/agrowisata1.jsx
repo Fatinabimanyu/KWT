@@ -5,6 +5,9 @@ import gambar2 from "../../assets/agrowisata/hid.JPG";
 import gambar3 from "../../assets/agrowisata/konv.JPG";
 import gambar4 from "../../assets/agrowisata/pem.JPG";
 import gambar5 from "../../assets/agrowisata/peng.JPG";
+import gambar6 from "../../assets/agrowisata/perik.JPG";
+import gambar7 from "../../assets/agrowisata/asman.JPG";
+
 import sunrise3 from "../../assets/agrowisata/sunrisee.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -192,54 +195,11 @@ const Agrowisata1 = () => {
               </p>
             </div>
             <div className="flex justify-center items-center">
-              {/* <img
+              <img
                 className="rounded-xl object-cover xl:h-[60vh] h-full"
-                src={gambar5}
+                src={gambar6}
                 alt="Pemasaran hasil kebun dan UMKM"
-              /> */}
-            </div>
-          </div>
-          <div className="grid grid-cols-1 xl:grid-cols-2 mt-3 gap-6 pt-4 items-center">
-            <div className="text-xl text-justify">
-              <div className="font-bold text-xl xl:text-3xl text-left mb-2">
-                Budidaya Peternakan ayam kampung
-              </div>
-              <p>
-                Budidaya peternakan ayam kampung adalah kegiatan membudidayakan
-                atau memelihara ayam kampung dengan tujuan untuk menghasilkan
-                produk seperti daging, telur, atau bahkan sebagai hewan
-                peliharaan. Ayam kampung memiliki ciri khas rasa daging yang
-                lebih gurih dan tekstur yang lebih kenyal dibandingkan ayam
-                broiler.
-              </p>
-            </div>
-            <div className="flex justify-center items-center">
-              {/* <img
-                className="rounded-xl object-cover xl:h-[60vh] h-full"
-                src={gambar5}
-                alt="Pemasaran hasil kebun dan UMKM"
-              /> */}
-            </div>
-          </div>
-          <div className="grid grid-cols-1 xl:grid-cols-2 mt-3 gap-6 pt-4 items-center">
-            <div className="text-xl text-justify">
-              <div className="font-bold text-xl xl:text-3xl text-left mb-2">
-                Budidaya Lebah Klanceng
-              </div>
-              <p>
-                Budidaya lebah klanceng adalah kegiatan membudidayakan atau
-                beternak lebah klanceng (Trigona spp.) dengan tujuan mendapatkan
-                produk-produknya seperti madu, propolis, dan bee pollen. Lebah
-                klanceng merupakan jenis lebah tanpa sengat yang memiliki ukuran
-                tubuh lebih kecil dibandingkan lebah madu.
-              </p>
-            </div>
-            <div className="flex justify-center items-center">
-              {/* <img
-                className="rounded-xl object-cover xl:h-[60vh] h-full"
-                src={gambar5}
-                alt="Pemasaran hasil kebun dan UMKM"
-              /> */}
+              />
             </div>
           </div>
           <div className="grid grid-cols-1 xl:grid-cols-2 mt-3 gap-6 pt-4 items-center">
@@ -256,11 +216,11 @@ const Agrowisata1 = () => {
               </p>
             </div>
             <div className="flex justify-center items-center">
-              {/* <img
+              <img
                 className="rounded-xl object-cover xl:h-[60vh] h-full"
-                src={gambar5}
+                src={gambar7}
                 alt="Pemasaran hasil kebun dan UMKM"
-              /> */}
+              />
             </div>
           </div>
         </div>

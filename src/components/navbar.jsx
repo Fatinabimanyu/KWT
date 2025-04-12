@@ -55,7 +55,7 @@ const Navbar = () => {
             Beranda
           </li>
         </NavLink>
-        {/* <NavLink
+        <NavLink
           end
           to="/artikel"
           className={({ isActive }) => (isActive ? "font-bold" : "font-normal")}
@@ -72,9 +72,9 @@ const Navbar = () => {
             }}
             className="transition-all cursor-pointer py-5 text-center hover:animate-fade hover:text-white hover:px-2 hover:bg-[#A0A083] hover:rounded-xl hover:bg-cover hover:bg-center hover:py-[10px]"
           >
-            Artikel
+            Eduwisata
           </li>
-        </NavLink> */}
+        </NavLink>
         <NavLink
           exact
           to="/kegiatan"
@@ -199,7 +199,7 @@ const Navbar = () => {
       >
         {/* <div className={`${navbar ? "absolute" : "hidden"}`}> */}
 
-        <ul className="z-50 mx-0 mt-16 flex h-auto pb-10 w-full flex-col bg-[#4d6a6d] sm:fixed sm:items-center sm:justify-evenly sm:text-3xl xl:hidden mobile:fixed mobile:items-center mobile:gap-10 mobile:text-3xl">
+        <ul className="z-50 mx-0 mt-16 flex h-auto pb-10 w-full flex-col bg-[rgba(77,106,109,0.85)] sm:fixed sm:bg-transparent sm:items-center sm:justify-evenly sm:text-3xl xl:hidden mobile:fixed mobile:items-center mobile:gap-10 mobile:text-3xl">
           <li className="active">
             <Link
               to=""
@@ -213,7 +213,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            {/* <Link
+            <Link
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 setNavbar(false);
@@ -221,8 +221,8 @@ const Navbar = () => {
               to="/artikel"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-[#A0A083]"
             >
-              Artikel
-            </Link> */}
+              Eduwisata
+            </Link>
           </li>
           <li>
             <Link

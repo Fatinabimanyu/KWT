@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import gambar1 from "../../assets/agrowisata/profil.JPG";
+import gambar4 from "../../assets/agrowisata/kelompok.JPG";
 import gambar2 from "../../assets/budaya/pawai.jpg";
 import gambar3 from "../../assets/agrowisata/gogik_c.jpg";
 import map_muncak from "../../assets/agrowisata/map-muncak.png";
@@ -124,12 +125,18 @@ const Budaya1 = () => {
               </div>
             </div>
             <div className="flex justify-center items-center col-span-2 mt-6">
-              <img
-                className="rounded-xl object-cover xl:h-[50vh] w-auto"
-                src={gambar1}
-                alt="Gambar tujuan, visi, dan misi"
-              />
-            </div>
+  <img
+    className="rounded-xl object-cover xl:h-[50vh] w-auto mx-2"
+    src={gambar1}
+    alt="Gambar tujuan, visi, dan misi"
+  />
+  <img
+    className="rounded-xl object-cover xl:h-[50vh] w-auto mx-2"
+    src={gambar4}
+    alt="Gambar tujuan, visi, dan misi"
+  />
+</div>
+
           </div>
         </div>
       </div>

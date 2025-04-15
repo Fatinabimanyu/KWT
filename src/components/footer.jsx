@@ -8,6 +8,8 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import Logo from "../assets/log.svg";
+import Logo1 from "../assets/app.jpg";
+import Logo2 from "../assets/csr.jpg";
 
 const footer = () => {
   return (
@@ -17,16 +19,25 @@ const footer = () => {
           <div className="mx-4 flex justify-evenly gap-y-2 xl:flex-row xl:items-start flex-col gap-8 mobile:text-2xl">
             <div className="flex flex-col items-center self-center xl:items-start xl:self-auto">
               <div className="flex items-center sm:px-[15rem] xl:px-0 xl:gap-10 xl:flex-row mb-4 xl:py-12">
-                <img
-                  src={Logo}
-                  alt=""
-                  className="transition-all xl:hidden xl:h-28 xl:scale-[1.4]"
-                />
-                <img
-                  src={Logo}
-                  alt=""
-                  className=" hidden transition-all xl:inline-flex xl:h-28 xl:scale-[1.4]"
-                />
+              <div className="relative">
+  {/* Logo utama */}
+  <div className="flex items-center gap-4">
+    <img src={Logo} alt="Logo Utama" className="h-28" />
+    
+    <div className="text-white">
+      <h2 className="text-lg font-bold">KWT GOOD FARM</h2>
+      <p>Jl. Gardenia Loka, Paku Jaya<br />Tangerang Selatan, Banten 15324</p>
+    </div>
+  </div>
+
+  {/* Logo pendukung di bawah */}
+  <div className="mt-6 flex justify-center gap-4">
+    <img src={Logo1} alt="APP Logo" className="h-14" />
+    <img src={Logo2} alt="Indah Kiat Logo" className="h-14" />
+  </div>
+</div>
+
+
                 <span className="hidden xl:block">
                   <p className="">
                     <span className="font-bold content-left text-lg xl:text-xl text-white">

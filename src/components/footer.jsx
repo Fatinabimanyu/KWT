@@ -41,12 +41,10 @@ const footer = () => {
                 <span className="hidden xl:block">
                   <p className="">
                     <span className="font-bold content-left text-lg xl:text-xl text-white">
-                      KWT GOOD FARM
+                    
                     </span>
                     <br />
                     <span className="text-center xl:content-left text-md xl:text-lg text-white">
-                      Jl. Gardenia Loka, Paku Jaya, Kec. Serpong Utara, Kota
-                      Tangerang Selatan, Banten 15324
                     </span>
                   </p>
                 </span>

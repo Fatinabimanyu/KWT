@@ -66,7 +66,7 @@ const Agrowisata1 = () => {
         >
           <div className="pointer-events-none">
             <div className="mt-1 sm:gap-1.5 md:gap-1 xl:gap-1 mobile:gap-1.5">
-              <div className="font-black text-light-blue font-Satisfy text-2xl sm:text-3xl text-center xl:text-4xl mb-3">
+              <div className="font-black text-light-blue  text-2xl sm:text-3xl text-center xl:text-4xl mb-3">
                 Kegiatan
               </div>
             </div>
